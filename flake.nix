@@ -27,18 +27,5 @@
       # You can check out all available modules in folder.
       
     };
-    nixosConfigurations.workstation = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/workstation/configuration.nix
-        inputs.home-manager.nixosModules.default
-        ./modules/nixos/gaming.nix
-        ./modules/nixos/hardware/nvidia.nix
-        ./modules/nixos/hardware/battery.nix
-        ./modules/nixos/fonts.nix
-        ./modules/nixos/pipewire.nix
-      ];
-      
-    };
   };
 }
