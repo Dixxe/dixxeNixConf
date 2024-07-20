@@ -1,8 +1,9 @@
 { ... }:
 
 {
-    services.xserver = {
-		enable = true;
+	services.xserver.enable = true;
+	
+    services = {
 		libinput.enable = true;
 		displayManager.lightdm.enable = true;
 		desktopManager = {
