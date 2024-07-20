@@ -66,6 +66,13 @@
       "dixxe" = import ./home.nix;
     };
   };
+
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [
+      "272f5eae16114dee"
+    ];
+  };
  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -75,12 +82,15 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-     lxqt.lxqt-policykit
-     wofi
-     foot
      nautilus
-     inputs.envycontrol.packages.x86_64-linux.default
   ];
+
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [
+      "272f5eae16114dee" # it's private.
+    ];
+  };
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

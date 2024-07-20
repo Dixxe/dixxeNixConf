@@ -1,5 +1,8 @@
 {
-  description = "Vivobook dixxe's config flake";
+  description = "
+  Dixxe's flake to maintain his own PC
+  and couple of his machines
+  ";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -32,6 +35,21 @@
         ./modules/nixos/gaming-tweaks.nix
         ./modules/nixos/hardware/nvidia.nix
         ./modules/nixos/hardware/battery-threshold.nix
+        ./modules/nixos/fonts.nix
+        ./modules/nixos/pipewire.nix
+        
+      ];
+      
+    };
+
+    nixosConfigurations.trash-laptop = nixpkgs.lib.nixosSystem {
+      specialArgs = {inherit inputs;};
+      modules = [
+        ./hosts/trash-laptop/configuration.nix
+        inputs.home-manager.nixosModules.default
+        ./modules/nixos/desktop-enviroments/cinnamon.nix
+        ./modules/nixos/gaming-tweaks.nix
+        ./modules/nixos/hardware/amdgpu.nix
         ./modules/nixos/fonts.nix
         ./modules/nixos/pipewire.nix
         
