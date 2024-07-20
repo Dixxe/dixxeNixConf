@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
     home.packages = [
         plgs.lxqt.lxqt-policykit
