@@ -10,7 +10,9 @@
         ];
     };
 
-    home.packages = {
+    home.packages = [
+
         pkgs.kdePackages.kdenlive
-    }
+        
+    ];
 }
