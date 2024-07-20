@@ -2,7 +2,7 @@
 
 {
     home.packages = [
-        plgs.lxqt.lxqt-policykit
+        pkgs.lxqt.lxqt-policykit
         pkgs.wofi
         pkgs.foot
         pkgs.nautilus

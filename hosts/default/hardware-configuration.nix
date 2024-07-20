@@ -1,1 +1,0 @@
-# Paste your own hardware-configuration.nix. Or your boot will screw up
