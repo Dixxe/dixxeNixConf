@@ -4,5 +4,6 @@
         ./git.nix
         ./hypr.nix
         ./waybar.nix
+        ./video-processing.nix
     ];
 }
