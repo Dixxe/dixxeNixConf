@@ -66,13 +66,6 @@
       "dixxe" = import ./home.nix;
     };
   };
-
-  services.zerotierone = {
-    enable = true;
-    joinNetworks = [
-      "272f5eae16114dee"
-    ];
-  };
  
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
