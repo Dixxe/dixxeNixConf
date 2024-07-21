@@ -12,7 +12,7 @@
 
     home.packages = [
 
-        pkgs.kdePackages.kdenlive
+        pkgs.libsForQt5.kdenlive
         
     ];
 }

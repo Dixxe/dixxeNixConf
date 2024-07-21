@@ -10,6 +10,7 @@
 
         # Personal love
         pkgs.nautilus
+        pkgs.nautilus-open-any-terminal
         pkgs.gvfs
         
         pkgs.vscodium
@@ -20,6 +21,9 @@
         pkgs.arrpc
 
         pkgs.firefox
+        
+        # Minecraft stuff
+        pkgs.prismlauncher
 
     ];
 }
