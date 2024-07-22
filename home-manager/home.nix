@@ -2,6 +2,8 @@
 
   imports = [
     ./modules/bundle.nix
+
+    ./your-variables.nix
     ./your-packages.nix
   ];
 
