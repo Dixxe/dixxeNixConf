@@ -11,7 +11,8 @@
     };
 
     home.packages = [
-
+        
+        pkgs.jellyfin-ffmpeg
         pkgs.libsForQt5.kdenlive
         
     ];
