@@ -13,9 +13,9 @@
         ipc = "off";
         splash = false;
 
-        preload = [ "~/Pictures/wallpapers/wallhaven-pkrqze_1920x1080.png" ];
+        preload = [ "../../wallpaper.png" ];
 
-        wallpaper = [ "eDP-1,~/Pictures/wallpapers/wallhaven-pkrqze_1920x1080.png" ];
+        wallpaper = [ "eDP-1,../../wallpaper.png" ];
     };
   };
 
@@ -82,7 +82,7 @@
             border_size = 2
 
             # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-            col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+            col.active_border = rgba(CC241Dee) rgba(689d6aee) 45deg
             col.inactive_border = rgba(595959aa)
 
             # Set to true enable resizing windows by clicking and dragging on borders and gaps
