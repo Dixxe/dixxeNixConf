@@ -9,6 +9,11 @@
        url = "github:nix-community/home-manager";
        inputs.nixpkgs.follows = "nixpkgs";
      };
+
+     nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
@@ -30,7 +35,10 @@
 
       homeConfigurations.dixxe = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
-        modules = [ ./home-manager/home.nix ];
+        modules = [ 
+          ./home-manager/home.nix 
+          inputs.nixvim.homeManagerModules.nixvim
+        ];
       };
     };
   

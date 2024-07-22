@@ -5,5 +5,6 @@
         ./hypr.nix
         ./waybar.nix
         ./video-processing.nix
+        ./nixvim/nixvim.niv
     ];
 }

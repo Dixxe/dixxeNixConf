@@ -10,6 +10,5 @@
         ./users.nix
         ./auto-cpufreq.nix
         ./zerotierone.nix
-        ./nixvim/nixvim.nix
     ];
 }

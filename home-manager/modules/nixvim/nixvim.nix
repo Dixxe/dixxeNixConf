@@ -7,7 +7,7 @@
     ./plugins/plugins-bundle.nix
   ];
 
-  programs.nixvim = {
+  nixvim = {
     enable = true;
 
     defaultEditor = true;
