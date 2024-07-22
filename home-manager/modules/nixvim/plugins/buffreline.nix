@@ -1,0 +1,3 @@
+{
+    bufferline.enable = true;
+}

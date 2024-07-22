@@ -41,7 +41,7 @@
 
         # Set programs that you use
         $terminal = foot
-        $fileManager = nautilus
+        $fileManager = thunar
         $menu = wofi --show drun
 
 

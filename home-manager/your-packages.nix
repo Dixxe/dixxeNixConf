@@ -14,9 +14,8 @@
         pkgs.grimblast
 
         # Personal love
-        pkgs.nautilus
-        pkgs.nautilus-open-any-terminal
-        pkgs.gvfs
+        pkgs.xfce.thunar
+        pkgs.xfce.thunar-archive-plugin
         
         pkgs.vscodium
 
