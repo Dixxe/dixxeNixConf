@@ -13,9 +13,9 @@
         ipc = "off";
         splash = false;
 
-        preload = [ "../../wallpaper.png" ];
+        preload = [ "~/Pictures/wallpapers/wallpaper.png" ];
 
-        wallpaper = [ "eDP-1,../../wallpaper.png" ];
+        wallpaper = [ "eDP-1,~/Pictures/wallpapers/wallpaper.png" ];
     };
   };
 

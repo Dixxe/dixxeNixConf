@@ -10,5 +10,6 @@
         ./users.nix
         ./auto-cpufreq.nix
         ./zerotierone.nix
+        ./garbage-collector.nix 
     ];
 }
