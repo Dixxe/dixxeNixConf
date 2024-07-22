@@ -1,3 +1,3 @@
 {
-    bufferline.enable = true;
+    programs.nixvim.plugins.bufferline.enable = true;
 }

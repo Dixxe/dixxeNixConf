@@ -1,3 +1,3 @@
 {
-    indent-o-matic.enable = true;
+    programs.nixvim.plugins.indent-o-matic.enable = true;
 }

@@ -10,6 +10,6 @@
   };
   
   imports = [
-    ./plugins/plugins-bundle.nix 
+    ./plugins-bundle.nix 
   ]; 
 }

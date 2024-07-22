@@ -1,5 +1,5 @@
 {
-    lsp = {
+    programs.nixvim.plugins.lsp = {
       enable = true;
       servers = {
         # C# support
