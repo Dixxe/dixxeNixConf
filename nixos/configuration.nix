@@ -12,6 +12,10 @@
       ./modules/hardware/battery-threshold.nix
       ./system-packages.nix
     ];
+
+  disabledModules = [
+    ./modules/xkb-settings.nix
+  ];
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 

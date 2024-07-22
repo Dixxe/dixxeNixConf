@@ -1,6 +1,11 @@
 { pkgs, ... }:
 
 {
+    imports = 
+    [
+        ./modules/package-groups/utils.nix
+    ];
+
     home.packages = [
         # Hyprland stuff
         pkgs.lxqt.lxqt-policykit
@@ -21,6 +26,7 @@
         pkgs.arrpc
 
         pkgs.firefox
+        pkgs.qbittorrent
         
         # Minecraft stuff
         pkgs.prismlauncher
