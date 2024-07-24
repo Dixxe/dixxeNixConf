@@ -11,5 +11,6 @@
         ./auto-cpufreq.nix
         ./zerotierone.nix
         ./garbage-collector.nix
+        ./zram.nix
     ];
 }
