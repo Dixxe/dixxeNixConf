@@ -7,7 +7,8 @@
 	enable = true;
 	enableCompletion = true;
 	autosuggestion.enable = true;
-	syntaxHighlighting.enable = true;
+	environment.pathsToLink = [ "/share/zsh" ];
+    syntaxHighlighting.enable = true;
 
 	history = {
 		size = 100;
