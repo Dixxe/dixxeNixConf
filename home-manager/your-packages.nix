@@ -21,6 +21,7 @@
 
         # Social stuff
         pkgs.telegram-desktop
+        pkgs.element-desktop
         pkgs.vesktop
         pkgs.arrpc
 
