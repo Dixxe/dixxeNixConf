@@ -6,5 +6,6 @@
         ./waybar.nix
         ./video-processing.nix
         ./nixvim/nixvim.nix
+        ./zsh.nix
     ];
 }
