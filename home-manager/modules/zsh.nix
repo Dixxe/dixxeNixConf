@@ -1,13 +1,10 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
-    users.defaultUserShell = pkgs.zsh;
-
     programs.zsh = {
 	enable = true;
 	enableCompletion = true;
 	autosuggestion.enable = true;
-	environment.pathsToLink = [ "/share/zsh" ];
     syntaxHighlighting.enable = true;
 
 	history = {
