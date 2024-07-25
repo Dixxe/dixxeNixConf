@@ -23,4 +23,9 @@
 
   system.stateVersion = "24.05"; # Did you read the comment?
 
+  hardware.cpu.x86.msr = {
+    enable = true;
+    settings.allow-writes = "on";    
+  };
+
 }
