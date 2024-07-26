@@ -18,6 +18,8 @@
     systemd.enable = true;
     
     extraConfig = ''
+        
+        monitor=eDP-1,1920x1080@144,0x0,1
 
         ###################
         ### MY PROGRAMS ###
@@ -41,7 +43,7 @@
         # exec-once = $terminal
         # exec-once = nm-applet &
         
-        exec-once = waybar & hyprpaper & alacritty nvim
+        exec-once = waybar & hyprpaper & alacritty -e nvim
         exec-once = lxqt-policykit-agent
 
          
@@ -59,11 +61,6 @@
             gaps_out = 20
 
             border_size = 2
-
-           
-
-            # Set to true enable resizing windows by clicking and dragging on borders and gaps
-            resize_on_border = false 
 
             # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
             allow_tearing = true
@@ -113,11 +110,6 @@
         master {
             new_status = master
         }
-
-        
-
-
-       
 
         ####################
         ### KEYBINDINGSS ###
@@ -181,21 +173,6 @@
 
         bind = ,Print,exec,grimblast copysave area
 
-
-        ##############################
-        ### WINDOWS AND WORKSPACES ###
-        ##############################
-
-        # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
-        # See https://wiki.hyprland.org/Configuring/Workspace-Rules/ for workspace rules
-
-        # Example windowrule v1
-        # windowrule = float, ^(kitty)$
-
-        # Example windowrule v2
-        # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
-
-        windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 
     '';
   };
