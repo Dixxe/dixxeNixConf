@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     envycontrol.url = "github:bayasdev/envycontrol";
+    stylix.url = "github:danth/stylix";
 
      home-manager = {
        url = "github:nix-community/home-manager";
@@ -30,6 +31,7 @@
         };
         modules = [
           ./nixos/configuration.nix
+          inputs.stylix
         ];
       };
 
