@@ -31,7 +31,7 @@
         };
         modules = [
           ./nixos/configuration.nix
-          inputs.stylix
+          inputs.stylix.nixosModules.stylix
         ];
       };
 
@@ -40,6 +40,7 @@
         modules = [ 
           ./home-manager/home.nix 
           inputs.nixvim.homeManagerModules.nixvim
+          inputs.stylix.homeManagerModules.stylix 
         ];
       };
     };

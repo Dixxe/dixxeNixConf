@@ -12,6 +12,5 @@
         ./zerotierone.nix
         ./garbage-collector.nix
         ./zram.nix
-        ./stylix.nix
     ];
 }

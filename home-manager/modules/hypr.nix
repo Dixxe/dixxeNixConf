@@ -12,10 +12,6 @@
     settings = {
         ipc = "off";
         splash = false;
-
-        preload = [ "~/Pictures/wallpapers/wallpaper.png" ];
-
-        wallpaper = [ "eDP-1,~/Pictures/wallpapers/wallpaper.png" ];
     };
   };
 
@@ -58,14 +54,7 @@
         exec-once = waybar & hyprpaper & firefox
         exec-once = lxqt-policykit-agent
 
-        #############################
-        ### ENVIRONMENT VARIABLES ###
-        #############################
-
-        # See https://wiki.hyprland.org/Configuring/Environment-variables/
-
-        env = XCURSOR_SIZE,24
-        env = HYPRCURSOR_SIZE,24
+         
 
 
         #####################
@@ -81,9 +70,7 @@
 
             border_size = 2
 
-            # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-            col.active_border = rgba(CC241Dee) rgba(689d6aee) 45deg
-            col.inactive_border = rgba(595959aa)
+           
 
             # Set to true enable resizing windows by clicking and dragging on borders and gaps
             resize_on_border = false 
@@ -98,14 +85,7 @@
         decoration {
             rounding = 10
 
-            # Change transparency of focused and unfocused windows
-            active_opacity = 1.0
-            inactive_opacity = 1.0
 
-            drop_shadow = true
-            shadow_range = 4
-            shadow_render_power = 3
-            col.shadow = rgba(1a1a1aee)
 
             # https://wiki.hyprland.org/Configuring/Variables/#blur
             blur {

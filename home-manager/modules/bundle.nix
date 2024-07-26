@@ -7,5 +7,6 @@
         ./video-processing.nix
         ./nixvim/nixvim.nix
         ./zsh.nix
+        ./stylix.nix
     ];
 }
