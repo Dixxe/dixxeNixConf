@@ -10,7 +10,8 @@
         # Hyprland stuff
         pkgs.lxqt.lxqt-policykit
         pkgs.wofi
-        pkgs.foot
+       
+        pkgs.alacritty
         pkgs.grimblast
 
         # Personal love

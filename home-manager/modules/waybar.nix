@@ -142,24 +142,15 @@
             
         };
         style = ''
-            * {
-            font-size: 15px;
-            font-family: monospace;
-            }
-
-        window#waybar {
-            background: transparent;
-            color: #fdf6e3;
-        }
 
         #custom-right-arrow-dark,
         #custom-left-arrow-dark {
-            color: #1a1a1a;
+            color: @base00;
         }
         #custom-right-arrow-light,
         #custom-left-arrow-light {
-            color: #292b2e;
-            background: #1a1a1a;
+            color: @base00;
+            background: @base00;
         }
 
         #workspaces,
@@ -172,40 +163,40 @@
         #battery,
         #disk,
         #tray {
-            background: #1a1a1a;
+            background: @base00;
         }
 
         #workspaces button {
             padding: 0 2px;
-            color: #fdf6e3;
+            color: @base04;
         }
         #workspaces button.focused {
-            color: #268bd2;
+            color: @base07;
         }
         #workspaces button:hover {
             box-shadow: inherit;
             text-shadow: inherit;
         }
         #workspaces button:hover {
-            background: #1a1a1a;
-            border: #1a1a1a;
+            background: @base00;
+            border: @base04;
             padding: 0 3px;
         }
 
         #pulseaudio {
-            color: #268bd2;
+            color: @base0D;
         }
         #memory {
-            color: #2aa198;
+            color: @base0C;
         }
         #cpu {
-            color: #6c71c4;
+            color: @base0F;
         }
         #battery {
-            color: #859900;
+            color: @base0B;
         }
         #disk {
-            color: #b58900;
+            color: @base09;
         }
 
         #clock,
