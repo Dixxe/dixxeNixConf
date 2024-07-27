@@ -6,31 +6,29 @@
         ./modules/package-groups/utils.nix
     ];
 
-    home.packages = [
+    home.packages = with pkgs; [
         # Hyprland stuff
-        pkgs.lxqt.lxqt-policykit
-        pkgs.wofi
+        lxqt.lxqt-policykit
+        wofi
        
-        pkgs.alacritty
-        pkgs.grimblast
+        alacritty
+        grimblast
 
         # Personal love
-        pkgs.xfce.thunar
-        pkgs.xfce.thunar-archive-plugin
-        
-        pkgs.vscodium
+        xfce.thunar
+        xfce.thunar-archive-plugin
 
         # Social stuff
-        pkgs.telegram-desktop
-        pkgs.element-desktop
-        pkgs.vesktop
-        pkgs.arrpc
+        telegram-desktop
+        element-desktop
+        vesktop
+        arrpc
 
-        pkgs.firefox
-        pkgs.qbittorrent
+        firefox
+        qbittorrent
         
         # Minecraft stuff
-        pkgs.prismlauncher
+        prismlauncher
 
     ];
 }

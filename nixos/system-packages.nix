@@ -7,7 +7,8 @@
     environment.systemPackages = with pkgs; [
         inputs.envycontrol.packages.x86_64-linux.default
 	    home-manager
-        amdctl
+        ryzenadj
+        nh
     ];
 
 }

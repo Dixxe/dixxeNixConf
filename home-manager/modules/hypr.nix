@@ -46,8 +46,13 @@
         exec-once = waybar & hyprpaper & alacritty -e nvim
         exec-once = lxqt-policykit-agent
 
-         
-
+        input {
+          kb_layout = us,ru
+          kb_variant =qwerty
+          kb_model =
+          kb_options =grp:win_space_toggle
+          kb_rules = 
+        }
 
         #####################
         ### LOOK AND FEEL ###
