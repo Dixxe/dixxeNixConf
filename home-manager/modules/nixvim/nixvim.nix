@@ -3,7 +3,7 @@
     enable = true;
 
     defaultEditor = true;
-    colorschemes.gruvbox.enable = true;
+    # Color schemes managed by stylix! :D
     
   };
   

@@ -6,66 +6,29 @@
         settings = {
             mainBar = {
                 layer = "top";
-                position = "top";
+                position = "left";
+                height = 10;
+                spacing = 5;
+                margin-left = 20;
+                margin-right = 0;
 
                 modules-left = [
-                "custom/left-arrow-dark"
                 "hyprland/workspaces"
-                "custom/right-arrow-dark"
                 ];
 
                 modules-center = [
-                    "custom/left-arrow-dark"
                     "clock#1"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "clock#2"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
-                    "clock#3"
-                    "custom/right-arrow-dark"
                     ];
 
                     "modules-right" = [
-                    "custom/left-arrow-dark"
                     "pulseaudio"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "memory"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "cpu"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "battery"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "disk"
-                    "custom/right-arrow-dark"
-                    "custom/left-arrow-dark"
                     "tray"
-                    "custom/right-arrow-dark"
                 ];
-
-                "custom/left-arrow-dark" = {
-                    format = "";
-                    tooltip = false;
-                };
-
-                "custom/left-arrow-light" = {
-                    format = "";
-                    tooltip = false;
-                };
-
-                "custom/right-arrow-dark" = {
-                    format = "";
-                    tooltip = false;
-                };
-
-                "custom/right-arrow-light" = {
-                    format = "";
-                    tooltip = false;
-                };
 
                 "hyprland/workspaces" = {
                     disable-scroll = true;
@@ -73,17 +36,12 @@
                 };
 
                 "clock#1" = {
-                    format = "{:%a}";
-                    tooltip = false;
-                };
-
-                "clock#2" = {
                     format = "{:%H:%M}";
                     tooltip = false;
                 };
 
-                "clock#3" = {
-                    format = "{:%m-%d}";
+                "clock#2" = {
+                    format = "{:%a | %m-%d}";
                     tooltip = false;
                 };
 
@@ -142,15 +100,15 @@
             
         };
         style = ''
-
-        #custom-right-arrow-dark,
-        #custom-left-arrow-dark {
-            color: @base00;
+        * {
+            border: none;
+            border-radius:0;
         }
-        #custom-right-arrow-light,
-        #custom-left-arrow-light {
-            color: @base00;
-            background: @base00;
+
+        window#waybar {
+            border: 2px solid @base04; 
+            background: alpha(@base00, 0.7);
+            border-radius: 10px;
         }
 
         #workspaces,
@@ -163,39 +121,36 @@
         #battery,
         #disk,
         #tray {
-            background: @base00;
+            border-radius: 10px; 
         }
 
-        #workspaces button {
-            padding: 0 2px;
-            color: @base04;
+        #clock {
+            border-radius: 10px;
+            
         }
-        #workspaces button.focused {
-            color: @base07;
-        }
-        #workspaces button:hover {
-            box-shadow: inherit;
-            text-shadow: inherit;
-        }
-        #workspaces button:hover {
-            background: @base00;
-            border: @base04;
-            padding: 0 3px;
+        
+        #workspaces {
+            border-radius: 10px;
         }
 
         #pulseaudio {
+            border-radius: 10px;
             color: @base0D;
         }
         #memory {
+            border-radius: 10px;
             color: @base0C;
         }
         #cpu {
+            border-radius: 10px;
             color: @base0F;
         }
         #battery {
+            border-radius: 10px;
             color: @base0B;
         }
         #disk {
+            border-radius: 10px;
             color: @base09;
         }
 

@@ -11,7 +11,7 @@
 
     cursor = {
       package = pkgs.oreo-cursors-plus;
-      name = "oreo_purple_cursors";
+      name = "oreo_white_cursors";
       size = 24;
     };
 
