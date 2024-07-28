@@ -1,14 +1,17 @@
 <h1 align=center>❄️ Welcome to dixxe's NixOS config! ❄️</h1>
 
-![preview](https://gitlab.com/dotfiles1084529/nixConf/-/blob/main/preview.png?raw=true)
+![preview](preview.png)
 
-> [!NOTE] 
+---
+> ### 📝
 > NixOS is not like any other Linux distributive. Declarative, Reproducible, Immutable and Atomic - this OS is another whole world, world full of wonders. ✨
 
+---
+## Information about config
 * My main goal is made **easy to understand, no boiler-plate config**, so anyone can fork it and modify for own needs!
 * I'm still new to NixOS so this config will change very much as I learn new efficient approaches to do it
 
-# How to use it:
+## How to use it:
 ```bash
 git clone https://this/repo
 cd your/path/to/config
@@ -16,7 +19,7 @@ sudo nixos-rebuild switch --flake .
 home-manager switch --flake .
 ```
 
-# How to modify it:
+## How to modify it:
 <details><summary>Cloned this repo:</summary>
 
     1. Delete `.git/` folder from your config, so you can add files and build without warnings.
