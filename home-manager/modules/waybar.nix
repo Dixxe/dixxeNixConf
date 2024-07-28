@@ -6,11 +6,11 @@
         settings = {
             mainBar = {
                 layer = "top";
-                position = "left";
+                position = "top";
                 height = 10;
                 spacing = 5;
-                margin-left = 20;
-                margin-right = 0;
+                margin-left = 200;
+                margin-right = 200;
 
                 modules-left = [
                 "hyprland/workspaces"
@@ -100,14 +100,18 @@
             
         };
         style = ''
+        @define-color main @base00;
+        @define-color mainc @base04;
+
         * {
             border: none;
             border-radius:0;
+            padding: 0px;
         }
 
         window#waybar {
-            border: 2px solid @base04; 
-            background: alpha(@base00, 0.7);
+            border: 2px solid @mainc; 
+            background: alpha(@main, 0.7);
             border-radius: 10px;
         }
 
@@ -121,6 +125,7 @@
         #battery,
         #disk,
         #tray {
+            margin-right: 5px;
             border-radius: 10px; 
         }
 
@@ -130,7 +135,24 @@
         }
         
         #workspaces {
+            padding: 4px;
             border-radius: 10px;
+        }
+
+        #workspaces button.active {
+            border-radius: 10px;
+            border: 2px solid @mainc;
+        }
+
+        #workspaces button {
+            transition-property: background-color;
+            transition-duration: 0.5s;
+
+        }
+
+        #workspaces button:hover {
+            border-radius: 10px;
+            background: lighter(@main);
         }
 
         #pulseaudio {
