@@ -9,7 +9,6 @@
         localNetworkGameTransfers.openFirewall = true;
         package = pkgs.steam-small.override {
             extraEnv = {
-                MANGOHUD = true;
                 OBS_VKCAPTURE = true;
             };
         };

@@ -23,10 +23,10 @@
 
                     "modules-right" = [
                     "pulseaudio"
-                    "memory"
+                    "network"
                     "cpu"
                     "battery"
-                    "disk"
+                    "memory"
                     "tray"
                 ];
 
@@ -62,13 +62,13 @@
                 };
 
                 "memory" = {
-                interval = 5;
-                format = "Mem {}%";
+                    interval = 5;
+                    format = "Mem {}%";
                 };
 
                 "cpu" = {
-                interval = 5;
-                format = "CPU {usage:2}%";
+                    interval = 5;
+                    format = "CPU {usage:2}%";
                 };
 
                 "battery" = {
@@ -87,14 +87,16 @@
                 ];
                 };
 
-                "disk" = {
-                interval = 5;
-                format = "Disk {percentage_used:2}%";
-                path = "/";
-                };
-
                 "tray" = {
                 icon-size = 20;
+                };
+
+                "network" = {
+                    interval = 5;
+                    format-wifi = "  {essid} ({signalStrength}%)";
+                    format-ethernet = "  {ifname}: {ipaddr}/{cidr}";
+                    format-disconnected = "Disconnected";
+                    tooltip-format = "{ifname}: {ipaddr}";
                 };
             };
             

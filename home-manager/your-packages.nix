@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ lib, pkgs, ... }:
 
 {
     imports = 
@@ -10,7 +10,8 @@
         # Hyprland stuff
         lxqt.lxqt-policykit
         wofi
-       
+        
+        obsidian
         alacritty
         grimblast
 
@@ -29,6 +30,11 @@
         
         # Minecraft stuff
         prismlauncher
+        krita
 
+    ];
+
+    nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
+        "obsidian"
     ];
 }
