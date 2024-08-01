@@ -8,5 +8,6 @@
         ./nixvim/nixvim.nix
         ./zsh.nix
         ./stylix.nix
+        ./gammastep.nix
     ];
 }
