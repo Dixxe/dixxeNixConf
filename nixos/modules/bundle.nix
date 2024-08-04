@@ -12,5 +12,7 @@
         ./zerotierone.nix
         ./garbage-collector.nix
         ./zram.nix
+        ./firewall.nix
+        ./i2p.nix
     ];
 }
