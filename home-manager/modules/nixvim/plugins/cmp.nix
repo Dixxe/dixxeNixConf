@@ -1,5 +1,6 @@
 {
     programs.nixvim.plugins.cmp-nvim-lsp.enable = true; 
+    programs.nixvim.plugins.cmp-vsnip = true;
 
     programs.nixvim.plugins.cmp = {
       enable = true;
@@ -7,6 +8,7 @@
 
       settings.sources = [
         {name = "nvim_lsp";}
+        {name= "vsnip";}
         {name = "path";}
         {name = "buffer";}
       ];
