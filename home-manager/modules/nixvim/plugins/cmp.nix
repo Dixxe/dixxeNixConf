@@ -1,6 +1,6 @@
 {
     programs.nixvim.plugins.cmp-nvim-lsp.enable = true; 
-    programs.nixvim.plugins.cmp-vsnip = true;
+    programs.nixvim.plugins.cmp-vsnip.enable = true;
 
     programs.nixvim.plugins.cmp = {
       enable = true;
