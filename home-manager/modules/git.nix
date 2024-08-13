@@ -6,7 +6,11 @@
         userEmail = "dixxe.mail@proton.me"; # Hello there :D.
         userName = "Dixxe";
         extraConfig = {
-            credential.helper = "oauth";
+            credential.helper = [
+                "cache --timeout 21600"
+                "oauth"
+            ]; 
+            
         };
     };
 
