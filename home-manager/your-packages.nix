@@ -21,13 +21,13 @@
 
         # Social stuff
         telegram-desktop
-        element-desktop
+        hexchat
         vesktop
         arrpc
-
+        
         firefox
         qbittorrent
-        
+
         # Minecraft stuff
         prismlauncher
         krita

@@ -13,6 +13,7 @@
         ./garbage-collector.nix
         ./zram.nix
         ./firewall.nix
-        ./i2p.nix
+        ./privoxy.nix
+        ./i2p/i2p.nix
     ];
 }

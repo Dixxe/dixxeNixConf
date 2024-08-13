@@ -1,0 +1,15 @@
+{
+
+    services.i2pd.outTunnels = {
+
+    	MinecraftServer = {
+	    enable = true;
+            address = "127.0.0.1";
+            port = 25565;
+            destination = "abnrfgqqsoy6d3dlc7dzq64c5uir5vd7hxy7s7weo6qvmzigf34a.b32.i2p";
+            keys = "i2pcraft.dat"; 
+        };
+
+    }; 
+
+}

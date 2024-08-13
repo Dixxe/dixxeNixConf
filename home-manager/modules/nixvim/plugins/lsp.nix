@@ -4,12 +4,12 @@
     programs.nixvim.plugins.lsp = {
       enable = true;
       servers = {
-        # C# support
-        csharp-ls.enable = true;
+        # Java support
+        java-language-server.enable = true;
         
-        # ZIG support
-        zls.enable = true;
-
+        # Nim support
+        nimls.enable = true;
+        
         nixd.enable = true;
       };
     };
