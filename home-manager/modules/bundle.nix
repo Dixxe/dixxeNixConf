@@ -9,5 +9,6 @@
         ./zsh.nix
         ./stylix.nix
         ./gammastep.nix
+        ./vscode.nix
     ];
 }
