@@ -3,6 +3,6 @@
     users.users.dixxe = {
         isNormalUser = true;
         description = "dixxe";
-        extraGroups = [ "networkmanager" "wheel" ];
+        extraGroups = [ "networkmanager" "wheel" "docker" ];
     };
 }

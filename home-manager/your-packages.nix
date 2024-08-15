@@ -30,6 +30,8 @@
 
         # Minecraft stuff
         prismlauncher
+
+        #Random stuff
         krita
 
     ];

@@ -11,9 +11,11 @@
         ./auto-cpufreq.nix
         ./zerotierone.nix
         ./garbage-collector.nix
-        ./zram.nix
-        ./firewall.nix
-        ./privoxy.nix
-        ./i2p/i2p.nix
+        ./docker.nix
+        ./tor.nix
+        # ./zram.nix
+        # ./firewall.nix
+        # ./privoxy.nix
+        # ./i2p/i2p.nix
     ];
 }
