@@ -1,11 +1,6 @@
 { lib, pkgs, ... }:
 
 {
-    imports = 
-    [
-        ./modules/package-groups/utils.nix
-    ];
-
     home.packages = with pkgs; [
         # Hyprland stuff
         lxqt.lxqt-policykit
