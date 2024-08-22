@@ -2,7 +2,7 @@
 
   imports = [
     ./modules/bundle.nix
-
+    ./package-groups/bundle.nix
     # ./your-variables.nix
     ./your-packages.nix
   ];

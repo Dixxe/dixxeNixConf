@@ -9,13 +9,13 @@
         ./xkb-settings.nix
         ./users.nix
         ./auto-cpufreq.nix
-        ./zerotierone.nix
+        # ./zerotierone.nix
         ./garbage-collector.nix
         ./docker.nix
-        ./tor.nix
+        # ./tor.nix
         # ./zram.nix
         # ./firewall.nix
-        # ./privoxy.nix
-        # ./i2p/i2p.nix
+        ./privoxy.nix
+        ./i2p/i2p.nix
     ];
 }

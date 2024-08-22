@@ -4,7 +4,6 @@
         ./git.nix
         ./hypr.nix
         ./waybar.nix
-        ./video-processing.nix
         ./nixvim/nixvim.nix
         ./zsh.nix
         ./stylix.nix

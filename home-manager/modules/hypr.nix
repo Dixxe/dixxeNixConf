@@ -49,9 +49,9 @@
         input {
           kb_layout = us,ru
           kb_variant =qwerty
-          kb_model =
           kb_options =grp:win_space_toggle
-          kb_rules = 
+          sensitivity = -0.5
+          accel_profile = flat
         }
 
         #####################
