@@ -7,7 +7,7 @@
 	enable = true;
 	base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-soft.yaml";
 
-    image = ../../wallpaper.png;
+    image = ../../wallpaper2.png;
 
     cursor = {
       package = pkgs.oreo-cursors-plus;
