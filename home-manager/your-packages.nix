@@ -9,10 +9,10 @@
         obsidian
         alacritty
         grimblast
+        vlc
 
         # Personal love
-        xfce.thunar
-        xfce.thunar-archive-plugin
+        nautilus
 
         # Social stuff
         telegram-desktop

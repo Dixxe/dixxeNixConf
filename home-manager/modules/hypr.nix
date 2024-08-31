@@ -29,7 +29,7 @@
 
         # Set programs that you use
         $terminal = alacritty
-        $fileManager = thunar
+        $fileManager = nautilus
         $menu = wofi --show drun
 
 
